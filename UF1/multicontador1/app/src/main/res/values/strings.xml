@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">multicontador1</string>
+    <string name="contador">0</string>
+    <string name="botones">+1</string>
+    <string name="reset">RESET</string>
+    <string name="reset_all">RESET ALL</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

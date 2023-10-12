@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_pastel"
+        app:title="Multicontador"
+        app:titleTextColor="@color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/contador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contador"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/reset1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/reset_all"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/reset_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_purple"
+        android:text="@string/reset_all"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/reset1"
+        app:layout_constraintLeft_toRightOf="@id/contador1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contador"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/reset2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/boton1"
+        app:layout_constraintTop_toBottomOf="@id/reset_all" />
+
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple"
+        android:text="@string/botones"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/boton2"
+        app:layout_constraintLeft_toRightOf="@id/contador2"
+        app:layout_constraintRight_toLeftOf="@+id/reset1"
+        app:layout_constraintTop_toBottomOf="@id/reset_all" />
+
+    <Button
+        android:id="@+id/reset1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_sweet"
+        android:text="@string/reset"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/reset2"
+        app:layout_constraintLeft_toRightOf="@id/boton1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset_all" />
+
+    <TextView
+        android:id="@+id/contador3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contador"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/reset3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/boton2"
+        app:layout_constraintTop_toBottomOf="@id/reset1" />
+
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple"
+        android:text="@string/botones"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/boton3"
+        app:layout_constraintLeft_toRightOf="@id/contador3"
+        app:layout_constraintRight_toLeftOf="@+id/reset2"
+        app:layout_constraintTop_toBottomOf="@id/reset1" />
+
+    <Button
+        android:id="@+id/reset2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_sweet"
+        android:text="@string/reset"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/reset3"
+        app:layout_constraintLeft_toRightOf="@+id/boton2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset1" />
+
+    <TextView
+        android:id="@+id/contador4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contador"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/reset4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/boton3"
+        app:layout_constraintTop_toBottomOf="@+id/reset2" />
+
+    <Button
+        android:id="@+id/boton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple"
+        android:text="@string/botones"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/boton4"
+        app:layout_constraintLeft_toRightOf="@+id/contador4"
+        app:layout_constraintRight_toLeftOf="@+id/reset3"
+        app:layout_constraintTop_toBottomOf="@+id/reset2" />
+
+
+    <Button
+        android:id="@+id/reset3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_sweet"
+        android:text="@string/reset"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/reset4"
+        app:layout_constraintLeft_toRightOf="@+id/boton3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset2" />
+
+    <TextView
+        android:id="@+id/contador5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contador"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/boton4"
+        app:layout_constraintTop_toBottomOf="@+id/reset3" />
+
+    <Button
+        android:id="@+id/boton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple"
+        android:text="@string/botones"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/contador5"
+        app:layout_constraintRight_toLeftOf="@+id/reset4"
+        app:layout_constraintTop_toBottomOf="@+id/reset3" />
+
+    <Button
+        android:id="@+id/reset4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_sweet"
+        android:text="@string/reset"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/boton4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

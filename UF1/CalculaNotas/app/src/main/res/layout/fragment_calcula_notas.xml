@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="4dp"
+    tools:layout_editor_absoluteY="-115dp">
+
+
+
+<!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/nota1"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:hint="Nota 1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/media"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/nota2"
+
+        />
+
+    <EditText
+        android:id="@+id/nota2"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:hint="Nota 2"
+        app:layout_constraintBottom_toTopOf="@id/media"
+        app:layout_constraintLeft_toRightOf="@id/nota1"
+        app:layout_constraintRight_toLeftOf="@id/nota3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nota3"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:hint="Nota 3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/media"
+        app:layout_constraintLeft_toRightOf="@id/nota2"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/media"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Media"
+        app:layout_constraintTop_toBottomOf="@id/nota2"
+        app:layout_constraintBottom_toTopOf="@id/frame_Layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/frame_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/media"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <TextView
+            android:id="@+id/mediaResultado"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="20sp"
+            android:gravity="center"/>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center"
+            android:indeterminateTint="#b57edc"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

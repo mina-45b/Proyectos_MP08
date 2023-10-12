@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/onbording0Fragment">
+
+    <fragment
+        android:id="@+id/onboarding1Fragment"
+        android:name="com.example.fragments.Onboarding1Fragment"
+        android:label="fragment_onboarding1"
+        tools:layout="@layout/fragment_onboarding1" >
+        <action
+            android:id="@+id/action_onboarding1Fragment_to_onborading2Fragment"
+            app:destination="@id/onborading2Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_onboarding1Fragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/onborading2Fragment"
+        android:name="com.example.fragments.Onborading2Fragment"
+        android:label="fragment_onborading2"
+        tools:layout="@layout/fragment_onborading2" >
+        <action
+            android:id="@+id/action_onborading2Fragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"/>
+    <fragment
+        android:id="@+id/onbording0Fragment"
+        android:name="com.example.fragments.onbording0Fragment"
+        android:label="fragment_onbording0"
+        tools:layout="@layout/fragment_onbording0" >
+        <action
+            android:id="@+id/action_onbording0Fragment_to_onboarding1Fragment"
+            app:destination="@id/onboarding1Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_onbording0Fragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"/>
+    </fragment>
+</navigation>
