@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LifeFragment">
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4ff91"/>
+    <TextView
+        android:id="@+id/months"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="40sp"/>
+    <TextView
+        android:id="@+id/cycle1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E4057E"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:text="Kitten"
+        android:gravity="center"
+        android:textSize="48sp"/>
+
+
+</FrameLayout>
