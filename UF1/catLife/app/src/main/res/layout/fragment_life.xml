@@ -16,16 +16,74 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="40sp"/>
+
+
     <TextView
         android:id="@+id/cycle1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffa43a"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:text="Cat Life"
+        android:gravity="center"
+        android:textSize="45sp"/>
+
+    <TextView
+        android:id="@+id/cycle2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#E4057E"
         android:textColor="@color/white"
         android:visibility="gone"
-        android:text="Kitten"
+        android:text="Kitten\n\nHuman age\nBirth - 10 years"
         android:gravity="center"
-        android:textSize="48sp"/>
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/cycle3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0E7CAC"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:text="Junior\n\nHuman age\n12 years - 24 years"
+        android:gravity="center"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/cycle4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#07AA87"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:text="Adult\n\nHuman age\n28 years - 40 years"
+        android:gravity="center"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/cycle5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#252766"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:text="Mature\n\nHuman age\n44 - 56 years"
+        android:gravity="center"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/cycle6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7F943A"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:text="Senior\n\nHuman age\n60 - 72 years"
+        android:gravity="center"
+        android:textSize="40sp"/>
+
 
 
 </FrameLayout>

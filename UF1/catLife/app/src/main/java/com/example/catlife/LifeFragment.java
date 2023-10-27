@@ -36,17 +36,44 @@ public class LifeFragment extends Fragment {
             }
         });
 
+
+
         lifeCatViewModel.obtenerMonths().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
-            public void onChanged(String moths) {
-                if (moths.equals("cycle1")){
+            public void onChanged(String months) {
+                if (months.equals("cycle1")){
                     binding.cycle1.setVisibility(View.VISIBLE);
                 } else {
                     binding.cycle1.setVisibility(View.GONE);
                 }
-                binding.months.setText(moths);
+                if (months.equals("cycle2")){
+                    binding.cycle2.setVisibility(View.VISIBLE);
+                } else {
+                    binding.cycle2.setVisibility(View.GONE);
+                }
+                if (months.equals("cycle3")){
+                    binding.cycle3.setVisibility(View.VISIBLE);
+                } else {
+                    binding.cycle3.setVisibility(View.GONE);
+                }
+                if (months.equals("cycle4")){
+                    binding.cycle4.setVisibility(View.VISIBLE);
+                } else {
+                    binding.cycle4.setVisibility(View.GONE);
+                }
+                if (months.equals("cycle5")){
+                    binding.cycle5.setVisibility(View.VISIBLE);
+                } else {
+                    binding.cycle5.setVisibility(View.GONE);
+                }
+
+                if (months.equals("cycle6")){
+                    binding.cycle6.setVisibility(View.VISIBLE);
+                } else {
+                    binding.cycle6.setVisibility(View.GONE);
+                }
+                binding.months.setText("Time: "+ months);
             }
         });
-
     }
 }

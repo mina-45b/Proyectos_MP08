@@ -21,6 +21,7 @@ public class LifeCatViewModel extends AndroidViewModel {
 
         life = new Life();
 
+
         lifeLiveData = Transformations.switchMap(life.ordenLiveData, new Function1<String, LiveData<Integer>>() {
             String gatoAnterior;
 
@@ -67,8 +68,8 @@ public class LifeCatViewModel extends AndroidViewModel {
             }
         });
 
-    }
 
+    }
 
     LiveData<Integer> obtenerCat() {
         return lifeLiveData;
@@ -77,5 +78,8 @@ public class LifeCatViewModel extends AndroidViewModel {
     LiveData<String> obtenerMonths() {
         return monthsLiveData;
     }
+
+
+
 
 }

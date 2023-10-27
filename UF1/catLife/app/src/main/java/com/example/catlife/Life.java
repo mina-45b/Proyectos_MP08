@@ -12,6 +12,7 @@ public class Life {
 
     interface LifeListener {
         void cuandoSeMuestre(String orden);
+
     }
 
     ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
@@ -46,6 +47,7 @@ public class Life {
 
                 @Override
                 public void run() {
+
                     if (months % 5 == 0) {
                         vista++;
                         if (vista == 7) {
@@ -53,8 +55,8 @@ public class Life {
                             months = 0;
                         }
                     }
+                        lifeListener.cuandoSeMuestre("cat" + vista + ":" + (months % 5 == 0 ? "cycle"+vista : +months));
 
-                  lifeListener.cuandoSeMuestre("cat" + vista + ":" + (months % 5 == 0 ? "cycle1" : months));
                     months++;
                 }
             }, 0, 1, SECONDS);
