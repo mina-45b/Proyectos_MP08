@@ -47,7 +47,7 @@
         android:background="#0E7CAC"
         android:textColor="@color/white"
         android:visibility="gone"
-        android:text="Junior\n\nHuman age\n12 years - 24 years"
+        android:text="Junior\n\nHuman age\n12 - 24 years"
         android:gravity="center"
         android:textSize="40sp"/>
 
@@ -58,7 +58,7 @@
         android:background="#07AA87"
         android:textColor="@color/white"
         android:visibility="gone"
-        android:text="Adult\n\nHuman age\n28 years - 40 years"
+        android:text="Adult\n\nHuman age\n28 - 40 years"
         android:gravity="center"
         android:textSize="40sp"/>
 
