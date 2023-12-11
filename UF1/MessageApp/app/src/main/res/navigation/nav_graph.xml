@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeRecibidosFragment">
+
+    <fragment
+        android:id="@+id/favoritosFragment"
+        android:name="com.example.messageapp.FavoritosFragment"
+        android:label="Mensajes Favoritos"
+        tools:layout="@layout/fragment_favoritos" />
+    <fragment
+        android:id="@+id/enviadosRecyclerMensajeFragment"
+        android:name="com.example.messageapp.EnviadosRecyclerMensajeFragment"
+        android:label="Mensajes Enviados"
+        tools:layout="@layout/fragment_enviados_recycler_mensaje" />
+    <fragment
+        android:id="@+id/homeRecibidosFragment"
+        android:name="com.example.messageapp.HomeRecibidosFragment"
+        android:label="Mensajes Recibidos"
+        tools:layout="@layout/fragment_home_recibidos" />
+    <fragment
+        android:id="@+id/archivadosFragment"
+        android:name="com.example.messageapp.ArchivadosFragment"
+        android:label="Mensajes Archivados"
+        tools:layout="@layout/fragment_archivados" />
+    <fragment
+        android:id="@+id/mostrarMensajeFragment"
+        android:name="com.example.messageapp.MostrarMensajeFragment"
+        android:label="Mensaje"
+        tools:layout="@layout/fragment_mostrar_mensaje" />
+    <fragment
+        android:id="@+id/nuevoMensajeFragment"
+        android:name="com.example.messageapp.NuevoMensajeFragment"
+        android:label="Nuevo Mensaje"
+        tools:layout="@layout/fragment_nuevo_mensaje" />
+
+    <action
+        android:id="@+id/action_mostrarMensajeFragment"
+        app:destination="@+id/mostrarMensajeFragment" />
+    <action
+        android:id="@+id/action_nuevoMensajeFrament"
+        app:destination="@+id/nuevoMensajeFragment" />
+    <fragment
+        android:id="@+id/busqueda"
+        android:name="com.example.messageapp.Busqueda"
+        android:label="fragment_busqueda"
+        tools:layout="@layout/fragment_busqueda" />
+
+
+</navigation>

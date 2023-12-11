@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Message App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="contactos">
+        <item>Jose Ramirez</item>
+        <item>Marta Díaz</item>
+        <item>Manuel Rodríguez</item>
+        <item>Alberto Fernández</item>
+        <item>Andrea Llada</item>
+    </string-array>
+
+</resources>

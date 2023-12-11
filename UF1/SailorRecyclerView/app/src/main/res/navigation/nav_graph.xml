@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recyclerSailorFragment">
+
+    <fragment
+        android:id="@+id/mostrarSailorFragment"
+        android:name="com.example.sailorrecyclerview.MostrarSailorFragment"
+        android:label="fragment_mostrar_sailor"
+        tools:layout="@layout/fragment_mostrar_sailor" />
+    <fragment
+        android:id="@+id/recyclerSailorFragment"
+        android:name="com.example.sailorrecyclerview.RecyclerSailorFragment"
+        android:label="fragment_recycler_sailor"
+        tools:layout="@layout/fragment_recycler_sailor" >
+        <action
+            android:id="@+id/action_recyclerSailorFragment_to_mostrarSailorFragment"
+            app:destination="@id/mostrarSailorFragment" />
+        <action
+            android:id="@+id/action_recyclerSailorFragment_to_nuevaSailorFragment"
+            app:destination="@id/nuevaSailorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nuevaSailorFragment"
+        android:name="com.example.sailorrecyclerview.NuevaSailorFragment"
+        android:label="fragment_nueva_sailor"
+        tools:layout="@layout/fragment_nueva_sailor" />
+</navigation>
